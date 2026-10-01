@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Tasks</title>
+    <link rel="stylesheet" href="/static/planner/style.css">
+</head>
+<body>
+<nav>
+    <a href="/">Home</a>
+    <a href="/add/">Add Task</a>
+    <a href="/tasks/">Task List</a>
+</nav>
+<main>
+    <h1>Saved Study Tasks</h1>
+    {% if tasks %}
+        {% for task in tasks %}
+        <article class="card">
+            <h2>{{ task.title }}</h2>
+            <p><strong>Subject:</strong> {{ task.subject }}</p>
+            <p><strong>Study time:</strong> {{ task.minutes }} minutes</p>
+            <p><small>Created: {{ task.created_at }}</small></p>
+        </article>
+        {% endfor %}
+    {% else %}
+        <p>No tasks have been added yet.</p>
+    {% endif %}
+</main>
+</body>
+</html>

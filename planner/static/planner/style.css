@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f6f8;
+    color: #222;
+}
+
+nav {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+input {
+    padding: 10px;
+    width: 95%;
+}
+
+button, .button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}

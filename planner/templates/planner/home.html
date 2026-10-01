@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="/static/planner/style.css">
+</head>
+<body>
+<nav>
+    <a href="/">Home</a>
+    <a href="/add/">Add Task</a>
+    <a href="/tasks/">Task List</a>
+</nav>
+<main>
+    <h1>Study Planner</h1>
+    <p>Plan your study sessions and keep track of your work.</p>
+    <section class="card">
+        <h2>Current Summary</h2>
+        <p><strong>{{ total_tasks }}</strong> study tasks are saved.</p>
+        <p><strong>{{ total_minutes }}</strong> total study minutes are planned.</p>
+    </section>
+    <a class="button" href="/add/">Create a Study Task</a>
+</main>
+</body>
+</html>

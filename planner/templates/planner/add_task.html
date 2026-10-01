@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Study Task</title>
+    <link rel="stylesheet" href="/static/planner/style.css">
+</head>
+<body>
+<nav>
+    <a href="/">Home</a>
+    <a href="/add/">Add Task</a>
+    <a href="/tasks/">Task List</a>
+</nav>
+<main>
+    <h1>Add a Study Task</h1>
+    <p>Enter information below. Django will validate and save your input.</p>
+    <form method="post" class="card">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Task</button>
+    </form>
+</main>
+</body>
+</html>
